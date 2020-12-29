@@ -1,0 +1,384 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Emma} % Your first name
+\familyname{Tosch} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{E220 Innovation Hall}{Burlington, VT}
+\email{Emma.Tosch@uvm.edu}
+\homepage{https://uvm.edu/~etosch} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\homepage{https://sites.google.com/view/sikka-anmol/home}{Homepage}
+%\extrainfo{DOB: September 15, 1997}
+%\photo[70pt][0.4pt]{pictures/House} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+%----------------------------------------------------------------------------------------
+\newcommand{\cics}{College of Information and Computer Sciences}
+\newcommand{\umass}{University of Massachusetts Amherst}
+\newcommand{\cems}{College of Engineering and Mathematical Sciences}
+\newcommand{\uvm}{University of Vermont}
+\newcommand{\me}{\emph{Emma Tosch}}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Research Interests}
+The research questions that motivate me relate to supporting sound experimental methodologies within complex software systems. I use methods from  domain-specific programming language design to build languages and tools for data scientists and social scientists.
+
+\section{Education}
+% cventry has 6 arguments
+\cventry{Sep. 2020}{PhD}
+ {\textbf{Computer Science}}
+ {}
+ {\umass{}}
+ {Thesis: System Design for Digital Experiments\\Advisors: Profs. David Jensen and J. Eliot B. Moss}
+
+% \cventry{Feb. 2015}{MS}
+%  {\textbf{Computer Science}}
+%  {}
+%  {\umass{}}
+%  {}
+
+\cventry{May 2011}{MA}{\textbf{Computer Science}}{}{Brandeis University}{Note: Part of a combined post-baccalaureate and MA program in computer science.}
+
+\cventry{Jun. 2008}{BA}{\textbf{English Literature}}{}{Wellesley College}{}
+
+
+\section{Academic Appointments}
+\cventry{Jul. 2020 -- present}{Research Affiliate}
+{\cems{}, \uvm{}}{Temporary research affiliation until January 2021}{}{}
+\cventry{Jan. 2021}{Assistant Professor}
+ {\cems{}, \uvm{}}{Programming LAnguages, Information security and Data privacy (PLAID) Lab}{}{}
+\cventry{May 2018 -- Aug. 2020}{Research Assistant}
+ {\umass{}}
+ {Knowledge Discovery Lab}
+ {Supervisor: David Jensen}
+ {Developed tools and methods to evaluate autonomous black-box agents for the DARPA Explainable AI (XAI) program.}
+ 
+\cventry{May 2013 -- Dec. 2016}{Research Assistant}
+ {\umass{}}
+ {PLASMA Lab}
+ {Supervisor: Emery Berger}
+ {Developed a domain specific programming language and runtime system to design, debug, and deploy scientific surveys on the web, at scale.}
+ 
+   \cventry{Sep. 2011 -- Jan. 2013}{Research Assistant}
+  {\umass{}}
+  {Computational Intelligence Lab}
+  {Supervisor: Lee Spector}
+  {Devised a new measure for evaluating parameters of evolutionary search based on techniques from nonparametric statistics.}
+  
+
+\section{Publications}
+%\subsection{Refereed Conferences and Workshops}
+\cventry{OOPSLA 2019}
+  {PlanAlyzer: Assessing Threats to the Validity of Online Experiments}
+  {Proceedings of the 2019 ACM International Conference on Object Oriented Programming Systems Languages and Applications (OOPSLA)}
+  {\me{}, Eytan Bakshy, Emery Berger, David D. Jensen, J. Eliot B. Moss}
+  {}
+  {\textbf{Selected as a SIGPLAN research highlight and a CACM research highlight.}}
+\cventry{NeurIPS Workshop 2018}
+  {ToyBox: Better Atari Environments for Testing Reinforcement Learning Agents}
+  {John Foley,* \me{},* Kaleigh Clary, David D. Jensen}
+  {Systems for Machine Learning Workshop at the 32nd Conference on Neural Information Processing Systems (NeurIPS)}
+  {}
+  {}
+\cventry{NeurIPS Workshop 2018}
+  {Measuring and Characterizing Generalization in Deep Reinforcement Learning}
+  {Sam Witty, Jun Ki Lee, \me{}, Akanksha Atrey, Michael Littman, David D. Jensen}
+  {Critiquing and Correcting Trends in Reinforcement Learning Workshop at the 32nd Conference on Neural Information Processing Systems (NeurIPS)}
+  {}
+  {}
+\cventry{NeurIPS Workshop 2018}
+{Let's Play Again: Variability of Deep Reinforcement Learning Agents in Atari Environments}
+{Kaleigh Clary, \me{}, John Foley, David D. Jensen}
+  {Critiquing and Correcting Trends in Reinforcement Learning Workshop at the 32nd Conference on Neural Information Processing Systems (NeurIPS)}
+  {}
+  {}
+
+\cventry{CODE 2015}
+  {Formal Verification and Automated Causal Inference for Internet-Scale Experiments}
+  {\me{}, E. Bakshy}
+  {Conference on Digital Experimentation (CODE@MIT)}
+  {}
+  {}
+
+\cventry{OOPSLA 2014}
+  {SurveyMan: Programming and Debugging Surveys at Scale}
+  {\me{}, E. Berger} 
+  {Proceedings of the 2014 ACM International Conference on Object Oriented Programming Systems Languages and Applications (OOPSLA)}
+  {}
+  {\textbf{Best Paper Award}}
+  
+\cventry{GECCO Workshop 2012}
+  {Achieving COSMOS: A metric for determining when to give up and when to reach for the stars}
+  {\me{}, L. Spector}
+  {Proceedings of the 14th International Conference on Genetic and Evolutionary Computation Conference Companion (GECCO)}
+  {}
+  {}
+  
+\cventry{ICCS 2011}
+  {Compositional Autoconstructive Dynamics}
+  {Kyle I. Harrington, \me{}, Lee Spector, Jordan Pollack}{Proceedings of the 8th International Conference on Complex Systems}
+  {}
+  {}
+  
+\cventry{FLAIRS 2011}
+  {Evaluating Conversational Characters Created through Question Generation}
+  {Grace Chen, \me{}, Ron Artstein, Anton Leuski, David Traum}
+  {Proceedings of the 24th International Florida Artificial Intelligence Research Society Conference (FLAIRS)}
+  {}
+  {}
+
+\section{Industrial Research Experience}
+
+ \cventry{Summer 2015}{Research Intern}
+ {Facebook, Inc. Menlo Park, CA}
+ {Core Data Science -- Economic Research Team, Statistics and Decision Science Team}
+ {Supervisor: Eytan Bakshy}
+ {Static Analysis for the PlanOut DSL}
+ 
+
+  \cventry{Summer 2010}{Research Intern}
+  {Institute for Creative Technologies. Playa Vista, CA}
+  {}
+  {Supervisor: Ron Artstein}
+  {Natural language generation and question-answering system for virtual humans}
+
+
+
+
+\section{Honors, Scholarships, and Awards}
+  2021~CACM Research Highlight\\
+  2020~SIGPLAN Research Highlight\\
+  2015~WPI STEM Faculty Launch participant and travel grant\\
+  2015~NCWIT Symantec Student Seed Funding (for UMass CS Women)\\
+ 2015~UMass Amherst School of Computer Science Outstanding Synthesis Award\\
+  2014~OOPSLA Best Paper Award\\
+  2014~PLDI ACM Student Research Competition (1st Place)\\
+  2013~Future of Software Engineering Symposium Scholarship at Microsoft Research\\
+  2013~Programming Languages Mentoring Workshop Scholarship\\
+  2012~ACM-W conference scholarship (attended SIG-EVO)\\
+  2010~Grace Hopper Celebration of Women in Computing Scholarship\\
+  2005~Humanities Foundation Award in English Literature\\
+
+
+\section{Teaching Experience}
+
+\cventry{Spring 2021}
+  {Instructor}
+  {Reinforcement Learning}
+  {\uvm{}}
+  {Upper Undergraduate/Graduate}
+  {}
+
+\cventry{Spring 2018}
+    {Instructor}
+    {Reasoning Under Uncertainty}
+    {\umass{}}
+    {Undergraduate}
+    {Co-taught with Luis Pineda}
+
+\cventry
+{Fall 2017}
+{Teaching Assistant}
+    {Advanced Logic}
+    {\umass{}}
+    {Upper Undergraduate/Graduate}
+    {Taught by Prof. Neil Immerman}
+    
+
+\cventry
+    {Spring 2017\\ Spring 2013}
+{Teaching Assistant, Guest Lecturer}
+    {Reasoning Under Uncertainty}
+    {\umass{}}
+    {Undergraduate}
+    {Taught by Prof. Andrew McGregor}
+    
+
+    \cventry{Spring 2011}
+    {Teaching Assistant, Guest Lecturer}
+    {Introduction to Theory of Computation}
+    {Brandeis University}
+    {Undergraduate}
+    {Taught by Dr. Antonella DiLillo}
+
+    \cventry{Fall 2010}
+    {Teaching Assistant}
+    {Structure and Interpretation of Computer Programs}
+    {Brandeis University}
+    {Undergraduate}
+    {Taught by Prof. Harry Mairson}
+    
+    \cventry{Spring 2010}
+    {Teaching Assistant}
+    {Data Structures}
+    {Brandeis University}
+    {Undergraduate}
+    {Taught by Dr. Antonella DiLillo}
+
+\section{Advising and Mentoring Experience}
+\cventry{Fall 2020\\--present}
+  {Co-Advisor}
+  {Participatory Data Surveys}
+  {Krystal Maughan, University of Vermont, PhD 2024 (expected)}
+  {PLAID Lab}{}
+  
+    \cventry    
+    {Summer 2016}
+{Mentor}
+    {Project on detecting adversarial behavior amongst online survey-takers}
+    {Rosario Huamani Carpio, Pomona College, B.A.  2018}
+    {}
+    {REU Program, PLASMA Lab, University of Massachusetts Amherst}
+
+\cventry{Summer 2015}
+{Mentor}
+    {Project for developing a SurveyMan graphical interface in React}
+    {Prakhar Srivastav, Columbia University, M.S. 2016}
+    {}
+    {Google Summer of Code, PLASMA Lab, University of Massachusetts Amherst}
+    
+
+\cventry{Summer 2013\\ Spring 2014}
+{Mentor}
+    {Early-stage research project on developing tools for writing sound online surveys}
+    {Molly McMahon, \umass{}, B.A. 2015}
+    {}
+    {REU Program \& Independent Study, PLASMA Lab, University of Massachusetts Amherst}
+    
+
+
+
+% \section{Teaching Training}
+% Fall 2015.~~Active Learning Training with Rachel Rybaczuk.\\
+% Fall 2015.~~CIRTL Course.  Diversity in College Classroom:  Teaching the STEM Undergraduate.
+
+
+\section{Other Work Experience}
+
+\cventry{May 2017 -- Aug. 2017}
+ {Project Assistant}  
+ {\umass{}} 
+ {Prof. Charles Weems}
+ {Amherst, MA}
+ {}
+\cventry{Sep. 2014 -- Dec. 2014}
+{Software Engineering Intern} 
+{Google, Inc.}
+{}
+{Mountain View, CA}
+{}
+
+\cventry{Mar. 2008 -- May 2009}
+{Data Warehouse Analyst} 
+{Recombinant Data Corp.}
+{}
+{Newton, MA}
+{}
+%  {\bf Usher}. September 2006 -- May 2008. American Repertory Theater. Cambridge, MA.\\ % comment this out later
+%\item[Assistant Loan Processor.] June 2005 -- October 2006. Hoffman Companies. Brookline, MA.
+%  {\bf Clerk}. May 2006 -- August 2006. Lulu's Bakery. Boston, MA.\\ % comment this out later
+%  {\bf Laborer}. January 2006 -- May 2006. Natick Community Organic Farm. Natick, MA.\\ % comment this out later
+%\item[Intern.] June 2004 -- August 2004. New Jersey Division of Law and Public Service. Trenton, NJ.
+%  {\bf Clerk}. June 2002 -- April 2003. Wawa (Convenience Store). Hamilton, NJ.\\ % comment this out later
+\newpage
+\section{Selected Talks and Presentations}
+
+\subsection{Programming Languages and Experimentation}
+\cventry{23 Oct. 2019}{Oral Presentation (full)}{OOPSLA 2019}{Athens, Greece}{}{}
+\cventry{9 Dec. 2016}{Invited talk}{Wellesley College}{Wellesley, MA}{}{}
+\cventry{31 May 2016}{Oral presentation (full)}{NEPLS Spring 2016}{Amherst, MA}{}{}
+\cventry{17 Oct. 2015}{Poster presentation}{CODE@MIT}{Cambridge, MA}{}{}
+
+\subsection{Software Infrastructure for Machine Learning}
+\cventry{7 Dec. 2018}{Poster presentation}{NeurIPS Systems for ML Workshop}{Montreal, QC}{}{}
+\cventry{4 Oct. 2018}{Oral presentation (full)} {IBM AI Systems Day}{Cambridge, MA}{}{}
+
+
+\subsection{Programming and Debugging Surveys}
+\cventry{8 Nov. 2016}{Invited talk}{SPLASH-I}{Amsterdam, Netherlands}{}{}
+\cventry{1 Oct. 2015}{Invited talk}{Union College}{Schenectady, NY}{}{}
+\cventry{13 May 2015}{Invited talk}{Google, Inc.}{Cambridge, MA}{}{}
+\cventry{22 Oct. 2014}{Oral pressentation (full)}{OOPSLA 2014}{Portland, OR}{}{}
+\cventry{11 Jun. 2014}{Oral presentation (short)}{PLDI Student Research Competition}{Edinburgh, Scotland}{}{}
+\cventry{25 Jan. 2014}{Oral presentation (full)}{POPL OBT Workshop}{San Diego, CA}{}{}
+
+% \subsection{Detecting Convergence in Population-based Genetic Programming Methods}
+%     \cventry{7 July 2012}{Oral presentation (full)} {GECCO Understanding Problems Workshop}{Philadelphia, PA}{}{}
+    
+%     \subsection{General Non-technical Topics in Computing}
+% \cventry{22 Oct. 2019}{Panelist}{Programming Languages Mentoring Workshop}{Athens, Greece}{}{}
+% \cventry{23 Jun. 2019}{Panelist}{Programming Languages Mentoring Workshop}{Phoenix, AZ}{}{}
+% \cventry{24 Apr. 2015}{Panelist}{MassMutual Women in Technology Conference}{Springfield, MA}{}{}
+
+
+\section{Professional Activities and Service}
+\cventry{2020}{Organizer}{Virtual PhD recruiting}{\url{https://phd-recruiting.com}}{}{}
+% \cventry{2020}{Volunteer}{Arizona Voter Protection}{}{}{}
+\cventry{2019}{Evaluator}{SLE Artifact Evaluation Committee}{}{}{}
+\cventry{2018}{Evaluator}{ECOOP Artifact Evaluation Committee}{}{}{}{}
+\cventry{Jan. 2016 -- Jan. 2017}{Graduate Representative}{\umass{}, \cics{} Faculty}{}{}{}
+\cventry{2016}{Student Volunteer}{PLDI Conference}{}{}{}
+\cventry{Jun. 2016 -- Jan. 2017}{Webmaster}{CS Women}{\umass{}, \cics{}}{}{}
+\cventry{Jan. 2016 -- May 2016}{Treasurer}{UMass CS Women}{\umass{}, \cics{}}{}{}
+\cventry{Jan. 2015 -- Jan. 2016}{Co-Chair}{UMass CS Women}{\umass{}, \cics{}}{}{}
+\cventry{2016}{Reviewer}{PLDI External Review Committee}{}{}{}{}
+\cventry{2016}{Reviewer}{ECOOP External Review Committee}{}{}{}
+\cventry{2016}{Reviewer}{POPL OBT Workshop Program Committee}{}{}{}
+% \cventry{2015}{Participant}{WPI STEM Faculty Launch}{}{}{}
+% \cventry{2015}{Participant}{ACM-W Early Career Mentoring Workshop}{}{}{}
+\cventry{2016}{Reviewer}{ECOOP DSLDI Workshop Program Committee}{}{}{}
+\cventry{2016}{Evaluator}{PLDI Artifact Evaluation Committee}{}{}{}
+\cventry{2014}{Reviewer}{NCWIT Aspirations Scholarship}{}{}{}
+\cventry{2015}{Reviewer}{POPL Artifact Evaluation Committee}{}{}{}
+\cventry{2014}{Student Volunteer}{SPLASH Conference}{}{}{}
+\cventry{Sep. 2011 -- May 2014}{Steward}{Graduate Employee Organization, UAW 2322}{\umass{}}{}{}
+\end{document}
+
+
+

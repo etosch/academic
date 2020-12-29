@@ -1,0 +1,86 @@
+body { 
+    background-color: #FFFFFF; 
+    font-family: Optima, Palatino, Arial, sans-serif, Helvetica;
+    padding:0ex 0ex 0ex 0ex ;
+    margin: 0ex 0ex 0ex 0ex ;
+    resize:both;
+    width:100%;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    width: 90%;
+    height: 2px;
+    color: #e3e7ef;
+    background-color: #e3e7ef;
+    margin:3ex 2ex 0ex 0ex ;
+}
+
+h1 {
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    color:#333333;
+    font-size:3.7em;
+    letter-spacing:-2px;
+}
+
+h2 {
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    color:#333333;
+}
+
+h3 {
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    color:#444444;
+}
+
+h4 {
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    color:#777777;
+}
+
+big {
+    font-size:1.3em;
+}
+
+spam {
+    color:#ffffff;
+}
+
+a:link {
+    color:#444444;
+}
+
+a:visited {
+    color:#444444;
+}
+
+a:hover {
+    color:#222222;
+    text-decoration:none;
+}
+
+a:active {
+    color:#000000;
+}
+
+p.small {
+    font-variant: small-caps;
+}
+
+.banner {
+    background-color:black; 
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    font-size: 14pt;
+    color: white;
+    text-align: center;
+}
+
+a.banner {
+    color: white;
+}
+
+a.banner:visited {
+    color: white;
+}
