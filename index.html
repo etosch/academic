@@ -22,26 +22,35 @@ layout: default
   </div>
 
   <div style="max-width: 896px; background-color:darkslategray; color: white; padding: 10px 10px 10px 10px; border-radius: 5px; overflow:auto; margin: 15px;">
+    <p>
     I am currently looking for PhD students! Feel free to reach out for a chat if you think we might work well together. 
     If you'd like to learn more about what I do, and my advising style, consider checking out:
-    <center>
     <ul>
-      <li><a href="http://research.emmatosch.com" style="color:pink"> &#9997; My research blog</a> </li>
-      <li><a href="http://advice.emmatosch.com" style="color:pink">&#9997; My advice blog</a></li>
+      <li><a href="http://research.emmatosch.com" style="color:pink"> My research blog</a> </li>
+      <li><a href="http://advice.emmatosch.com" style="color:pink">My advice blog</a></li>
     </ul> 
-  </center>
+  </p>
   </div>
 
-  <div style="margin: 15px; max-width: 896px;">
-    <h2 style="color: lightseagreen">Research Interests</h2>
+  <div class="section">
+    <h2>Research Interests</h2>
     <p>
       The research questions that motivate me relate to supporting sound experimental methodologies within complex software systems. I use methods from domain-specific programming language design to build languages and tools for data scientists and social scientists.
     </p>
     <p><i>Keywords: domain-specific languages, static analysis, software testing, data science, computational social science, experimentation</i></p>
   </div>
 
-  <div style="margin:15px">
-    <h2 style="color: lightseagreen">Teaching</h2>
+  <div class="section">
+    <h2>Current Advisees</h2>
+    <ul>
+      {% for student in site.students %}
+        <li><a href="{{ student.website }}">{{ student.name }}</a>{{ student.content }}{% if student.coadvisor %}<i>Coadvised with {{ student.coadvisor }}</i>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Teaching</h2>
     <ul> UVM CS 253: Reinforcement Learning, Spring 2021</ul>
     <ul> UMass CS 240: Reasoning Under Uncertainty, Spring 2018</ul>
   </div>
