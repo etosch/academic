@@ -1,6 +1,6 @@
 ---
 title: The resemblance is uncanny
-layout: default
+layout: none
 ---
 Can you tell who is who?<br/>
 
