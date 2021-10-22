@@ -1,0 +1,3 @@
+collections:
+  students:
+    output: true
