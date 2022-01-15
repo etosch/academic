@@ -7,7 +7,16 @@
         <loc>/about/</loc>
     </url>
     <url>
+        <loc>/adhd/</loc>
+    </url>
+    <url>
         <loc>/demo/</loc>
+    </url>
+    <url>
+        <loc>/meetings/</loc>
+    </url>
+    <url>
+        <loc>/pandemic-start/</loc>
     </url>
     <url>
         <loc>/posts/</loc>
@@ -52,5 +61,8 @@
     <url>
         <loc>/publications/toybox/</loc>
         <lastmod>2020-01-01</lastmod>
+    </url>
+    <url>
+        <loc>/skills/</loc>
     </url>
 </urlset>
