@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+{% import "colors.html" as colors %}
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10 is-offset-1">
+                <div class="columns is-desktop">
+                    <div class="column is-one-third-desktop">
+                        <div class="box has-text-centered">
+                            <figure class="image is-192x192 is-centered is-inline-block">
+                                <img class="is-rounded" src="{{ config.extra.portrait }}">
+                            </figure>
+                            <div class="is-size-3 content"><strong>{{ config.extra.author }}</strong></div>
+                            <div style="background-color: yellow; border-radius: 10pt; border-style: solid;">
+                                <a href="meetings.html"><b>How to meet with me</b></a>
+                            </div>
+                            <div class="is-size-5">{{ config.extra.role }}</div>
+                            {% for organization in config.extra.organizations %}
+                            <div class="is-size-5 content">{{ organization.name }}</div>
+                            {% endfor %}
+                            <div class="content">
+                                {% for icon in config.extra.social_icons %}
+                                <a class="icon is-large fa-3x" href="{{icon.link | safe }}">
+                                    <i class="has-text-{{ colors::style() }} {{icon.icon_pack}} {{ icon.icon }}"></i>
+                                </a>
+                                {% endfor %}
+                            </div>
+                            <div>
+                                <a href="blm.html">BLM Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-two-thirds-desktop">
+                        <div class="content">
+                            {% for page in section.pages %}
+                            {% if page.relative_path == "about.md" %}
+                            <h2>{{ page.title }}</h2>
+                            {{ page.content | safe }}
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="columns">
+                            <div class="column is-5 content">
+                                <h4>Interests</h4>
+                                <ul>
+                                    {% for interest in config.extra.interests %}
+                                    {% if interest.link %}
+                                    <li><a href="{{ interest.link | safe }}">{{ interest.label }}</a></li>
+                                    {% else %}
+                                    <li>{{ interest.label }}</li>
+                                    {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="column is-7 content">
+                                <h4>Education</h4>
+                                {% for education in config.extra.education %}
+                                    <div class="columns is-mobile">
+                                        <span class="icon is-medium column is-narrow is-mobile">
+                                            <i class="fas fa-graduation-cap"></i>
+                                        </span>
+                                        <span class="column">
+                                            {{ education.course }}, {{ education.year }}<br/>
+                                            <span class="has-text-grey">{{ education.institution }}</span>
+                                        </span>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if config.extra.show_publications %}
+{% set publications = get_section(path="publications/_index.md") %}
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title" id="publications">
+                    <a class="has-text-{{ colors::style() }}" href="{{ get_url(path='publications') | safe }}">
+                        {{ publications.title }}
+                    </a>
+                </h1>
+                {% if publications.description %}
+                    <h4 class="title is-4">{{ publications.description }}</h4>
+                {% endif %}
+            </div>
+            <ul class="column is-two-thirds-desktop">
+                {% for publication_path in publications.pages %}
+                <li class="is-1">
+                    {% set publication = get_page(path=publication_path.relative_path) %}
+                    {{ macros::post_header(post=publication, thumbnail=true) }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+
+{% if config.extra.show_courses %}
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title" id="courses">
+                    <a class="has-text-{{ colors::style() }}" href="{{ get_url(path='courses') | safe }}">
+                       Courses
+                    </a>
+                </h1>
+            </div>
+            <ul class="column is-two-thirds-desktop">
+                {% for course in config.extra.courses %}
+                    {% if course.link %}
+                    <li class="content"><h4 class="title is-4"><a href="{{ course.link }}">{{ course.name }}</a></h4> ({{ course.institution }} &middot; Most recent offering: {{ course.term }})</li>
+                    {% else %}
+                    <li class="content"><h4 class="title is-4">{{ course.name }}</h4> ({{ course.institution}} &middot; Most recent offering: {{ course.term }})</li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </div>
+    </div>
+</section>
+{% endif %}
+
+{% if config.extra.show_posts %}
+{% set posts = get_section(path="posts/_index.md") %}
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title is-1" id="posts">
+                    <a class="has-text-{{ colors::style() }}" href="{{ get_url(path='posts') | safe }}">
+                        {{ posts.title }}
+                    </a>
+                </h1>
+                {% if posts.description %}
+                    <h4 class="title is-4">{{ posts.description }}</h4>
+                {% endif %}
+            </div>
+            <ul class="column is-two-thirds-desktop">
+                {% for post_path in posts.pages %}
+                <li class="content">
+                    {% set post = get_page(path=post_path.relative_path) %}
+                    {{ macros::post_header(post=post, thumbnail=true) }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if config.extra.show_projects %}
+{% set projects = get_section(path="projects/_index.md") %}
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title" id="projects">
+                    <a class="has-text-{{ colors::style() }}" href="{{ get_url(path='projects') | safe }}">
+                       {{ projects.title }}
+                    </a>
+                </h1>
+                {% if projects.description %}
+                    <h4 class="title is-4">{{ projects.description }}</h4>
+                {% endif %}
+            </div>
+            <ul class="column is-two-thirds-desktop">
+                <div class="columns is-multiline is-desktop">
+                    {% for project_path in projects.pages %}
+                        <li class="content column is-one-half">
+                            {% set project = get_page(path=project_path.relative_path) %}
+                            {{ macros::project_header(project=project) }}
+                        </li>
+                    {% endfor %}
+                </div>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<section id="calendar" class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title">
+                    <a class="has-text-{{ colors::style() }}" href="#calendar">Calendar</a>
+                </h1>
+            </div>
+            <div class="column is-two-thirds-desktop">
+                <iframe src="https://calendar.google.com/calendar/embed?src=etosch%40gmail.com&ctz=America%2FNew_York&wkst=1&mode=WEEK" 
+                    style="border: 0; width:100%; min-height:600px;" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if config.extra.fun_facts %}
+<section id="funfacts" class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title">
+                    <a class="has-text-{{ colors::style() }}" href="#funfacts">Fun Facts about Me</a>
+                </h1>
+            </div>
+            <div class="column is-two-thirds-desktop">
+                As time passes it's easy to forget that other people don't know our whole stories, 
+                or see us how we see ourselves. 
+                I've assembled fun facts about me that, for some reason,
+                people have enjoyed hearing about over the years:
+                <br/><br/>
+                <ul style="list-style-type: circle; font-size: small;">
+                    {% for fact in config.extra.fun_facts %}
+                    <li>
+                        {% if fact.link %}
+                        <a href="{{ fact.link }}">
+                        {% endif %}
+                            {{ fact.text }}
+                        {% if fact.link %}
+                        </a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if config.extra.show_contact %}
+<section id="contact" class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title">
+                    <a class="has-text-{{ colors::style() }}" href="#contact">Contact</a>
+                </h1>
+            </div>
+            <div class="column is-two-thirds-desktop">
+                <ul>
+                    {% for contact_link in config.extra.contact_links %}
+                    <li>
+                        <div class="columns is-mobile">
+                            <i class="fa-2x {{ contact_link.icon_pack }} {{ contact_link.icon }} has-text-{{ colors::style() }} column is-narrow"></i>
+                            {% if contact_link.link %}
+                            <a href="{{contact_link.link | safe }}" class="column is-narrow is-mobile">
+                                {{ contact_link.name }}
+                            </a>
+                            {% else %}
+                            <span class="column is-narrow is-mobile">
+                                {{ contact_link.name }}
+                            </span>
+                            {% endif %}
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock content %}
