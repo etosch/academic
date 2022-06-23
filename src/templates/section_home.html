@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h1>{{ section.title }}</h1>
+            {{ section.content | safe }}
+        </div>
+        <ul class="content">
+            {% for post_path in section.pages %}
+            {% set post = get_page(path=post_path.relative_path) %}
+            <li class="">{{ macros::post_header(post=post, thumbnail=true) }}</li>
+            <p style="font-size:smaller">
+                {{ post.summary | safe }}&nbsp;<a href="{{ post.permalink }}#continue-reading">&#9735;Continue Reading</a>
+            </p>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endblock content %}

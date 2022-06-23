@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+        <style>
+            body {
+                background-color: white
+            }
+        </style>
+        
+        <title>PlanAlyzer: Assessing Threats to the Validity of Online Experiments - An Academic Exercise</title>
+    </head>
+    <body class="layout-documentation page-components">
+        <nav class="navbar is-light navbar-shadow" role="navigation" aria-label="main navigation">
+            
+            <div class="container">
+                
+                <div class="navbar-brand">
+                    <a class="navbar-item is-size-4" href="/">
+                        <strong>An Academic Exercise</strong>
+                    </a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        
+                        <a class="navbar-item is-size-6" href="/#publications">
+                            <strong>Publications</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/#projects">
+                            <strong>Projects</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/#courses">
+                            <strong>Courses</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/#calendar">
+                            <strong>Calendar</strong>
+                        </a>
+                        
+                    </div>
+                    <div class="navbar-end">
+                        
+                        <a class="navbar-item is-size-6" href="/musings">
+                            <strong>Musings</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/research_blog">
+                            <strong>Research Blog</strong>
+                        </a>
+                        
+                    </div>
+                </div>
+            
+            </div>
+            
+        </nav>
+        
+
+    
+        
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-6-desktop is-offset-3-desktop is-12-tablet">
+                <div class="content">
+                    
+                    
+                    <div>
+                        <h3>Abstract</h3>
+                        Online experiments have become a ubiquitous aspect of design and engineering processes within Internet firms. As the scale of experiments has grown, so has the complexity of their design and implementation. In response, firms have developed software frameworks for designing and deploying online experiments. Ensuring that experiments in these frameworks are correctly designed and that their results are trustworthy—referred to as internal validity—can be difficult. Currently, verifying internal validity requires manual inspection by someone with substantial expertise in experimental design.<br/><br/>We present the first approach for statically checking the internal validity of online experiments. Our checks are based on well-known problems that arise in experimental design and causal inference. Our analyses target PlanOut, a widely deployed, open-source experimentation framework that uses a domain-specific language to specify and run complex experiments. We have built a tool called PlanAlyzer that checks PlanOut programs for a variety of threats to internal validity, including failures of randomization, treatment assignment, and causal sufficiency. PlanAlyzer uses its analyses to automatically generate contrasts, a key type of information required to perform valid statistical analyses over the results of these experiments. We demonstrate PlanAlyzer’s utility on a corpus of PlanOut scripts deployed in production at Facebook, and we evaluate its ability to identify threats to validity on a mutated subset of this corpus. PlanAlyzer has both precision and recall of 92% on the mutated corpus, and 82% of the contrasts it generates match hand-specified data.
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+        
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>Powered by <strong><a class="has-text-info" href="https://github.com/tforgione/zola-academic">the academic theme</a></strong> for <strong><a class="has-text-info" href="https://www.getzola.org">Zola</a></strong> using <strong><a class="has-text-info" href="https://bulma.io">Bulma</a></strong>.
+            </div>
+        </footer>
+        
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+              if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                  el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                  });
+                });
+              }
+            });
+        </script>
+    </body>
+</html>

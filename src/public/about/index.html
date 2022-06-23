@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+        <style>
+            body {
+                background-color: white
+            }
+        </style>
+        
+        <title>An Academic Exercise</title>
+    </head>
+    <body class="layout-documentation page-components">
+        <nav class="navbar is-light navbar-shadow" role="navigation" aria-label="main navigation">
+            
+            <div class="container">
+                
+                <div class="navbar-brand">
+                    <a class="navbar-item is-size-4" href="/">
+                        <strong>An Academic Exercise</strong>
+                    </a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        
+                        <a class="navbar-item is-size-6" href="/#publications">
+                            <strong>Publications</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/#projects">
+                            <strong>Projects</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/#courses">
+                            <strong>Courses</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/#calendar">
+                            <strong>Calendar</strong>
+                        </a>
+                        
+                    </div>
+                    <div class="navbar-end">
+                        
+                        <a class="navbar-item is-size-6" href="/musings">
+                            <strong>Musings</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/research_blog">
+                            <strong>Research Blog</strong>
+                        </a>
+                        
+                    </div>
+                </div>
+            
+            </div>
+            
+        </nav>
+        
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10 is-offset-1">
+                <div class="content">
+                    <h1>Biography</h1>
+                    <p>Emma Tosch is an Assistant Professor of <a href="https://www.uvm.edu/cems/cs">Computer Science</a> in the <a href="https://www.uvm.edu/cems">College of Engineering and Mathematical Sciences</a> at the <a href="https://www.uvm.edu">University of Vermont</a>. She works in <em>applied programming languages (PL) research</em>, where she treats the process of language formalization — especially the design of domain-specific languages — as a methodological approach to problems not ordinarily considered the domain of PL. She is particularly interested in building languages and tools for data scientists and social scientsts.</p>
+<p>Tosch's primary interests are in PL applications to data collection and analysis for social science domains. Her early work on <a href="http://surveyman.emmatosch.com">SurveyMan</a> — a language and framework for designing, debugging, and deploying surveys — has won first place in the <a href="https://src.acm.org/winners/2015">2014 ACM student research competition at PLDI</a>, a best paper award at OOPSLA 2014, and a <a href="https://www.cics.umass.edu/oaa2015">2015 Outstanding Synthesis Award</a> in the <a href="https://cics.umass.edu">College of Computer and Information Sciences</a> at the <a href="https://www.umass.edu">University of Massachusetts</a>. Her recent work on <a href="https://github.com/KDL-umass/PlanAlyzer">PlanAlyzer</a> — a static analysis tool for programmatically-defined experiments — was recognized as a <a href="https://blog.sigplan.org/2020/09/01/2019-sigplan-research-highlight-awards/">SIGPLAN research highlight</a> in 2020 and was honored as a <a href="https://cacm.acm.org/magazines/2021/9/255047-planalyzer">Research Highlight</a> in the September 2021 issue of the <a href="https://cacm.acm.org">Communications of the ACM</a>. </p>
+<!-- Tosch has additionally worked in question answering (natural language processing), evolutionary computation, and explainable AI and has research interests in causal inference.  -->
+<p>Emma Tosch earned her B.A in English Literature from Wellesley College in 2008 before working at a healthcare IT start up. She obtained a post-baccalaureate certificate and M.A. in Computer Science from Brandeis University in 2011 before earning her PhD from the University of Massachusetts Amherst in 2020.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+        
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>Powered by <strong><a class="has-text-info" href="https://github.com/tforgione/zola-academic">the academic theme</a></strong> for <strong><a class="has-text-info" href="https://www.getzola.org">Zola</a></strong> using <strong><a class="has-text-info" href="https://bulma.io">Bulma</a></strong>.
+            </div>
+        </footer>
+        
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+              if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                  el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                  });
+                });
+              }
+            });
+        </script>
+    </body>
+</html>
