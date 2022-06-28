@@ -11,4 +11,9 @@ authors = ["Kaleigh Clary, Emma Tosch, Jeremiah Onaolapo, David D. Jensen"]
 
 publication = "USENIX"
 year=2022
+
+links = [
+    { name = "PDF", link = "https://www.usenix.org/system/files/sec22summer_clary.pdf"},
+    {name = "BibTeX", link = "citation.bib"}
+]
 +++
