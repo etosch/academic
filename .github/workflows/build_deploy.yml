@@ -16,5 +16,5 @@ jobs:
       uses: shalzz/zola-deploy-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BUILD_DIR: zola-academic-example
+        BUILD_DIR: src
         OUT_DIR: docs
