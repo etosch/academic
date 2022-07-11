@@ -42,12 +42,12 @@
         <loc>/musings/drafts/walking-away/</loc>
     </url>
     <url>
-        <loc>/musings/drafts/writing/</loc>
-        <lastmod>2022-05-31T00:00:00Z</lastmod>
-    </url>
-    <url>
         <loc>/musings/service/</loc>
         <lastmod>2020-12-14T00:00:00Z</lastmod>
+    </url>
+    <url>
+        <loc>/musings/writing/</loc>
+        <lastmod>2022-07-09T00:00:00Z</lastmod>
     </url>
     <url>
         <loc>/projects/</loc>
