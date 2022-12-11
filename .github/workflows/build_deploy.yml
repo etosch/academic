@@ -17,4 +17,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BUILD_DIR: src
-        OUT_DIR: ../docs
+        OUT_DIR: src/public
+    - name: Move output
+      run: rm docs/* && rsync -r src/public/* docs/*
