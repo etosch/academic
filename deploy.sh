@@ -1,4 +1,4 @@
-cd zola-academic-example && zola build
+cd src && zola build
 rm -r ../docs/*
 rsync -r public/* ../docs
 cd -
