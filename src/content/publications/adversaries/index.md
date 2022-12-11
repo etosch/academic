@@ -11,4 +11,11 @@ authors = ["Kaleigh Clary, Emma Tosch, Jeremiah Onaolapo, David D. Jensen"]
 
 publication = "USENIX"
 year=2022
+
+links=[
+    {name = "PDF", link = "https://www.usenix.org/system/files/sec22-clary.pdf"},
+    {name = "Video", link = "https://youtu.be/TEKMjdkJZ_c"},
+    {name = "Code (old)", link = "https://github.com/kclary/Adversaries"},
+    {name = "BibTeX", link = "citation.bib"}
+]
 +++

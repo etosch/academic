@@ -12,9 +12,11 @@
                             <figure class="image is-192x192 is-centered is-inline-block">
                                 <img class="is-rounded" src="{{ config.extra.portrait }}">
                             </figure>
-                            <div class="is-size-3 content"><strong>{{ config.extra.author }}</strong></div>
+                            <div class="is-size-3 content"><strong>{{ config.extra.author }}</strong><br/><a href="pronouns">{{ config.extra.pronouns }}</a></div>
+    
                             <div style="background-color: yellow; border-radius: 10pt; border-style: solid;">
-                                <a href="meetings.html"><b>How to meet with me</b></a>
+                                {# <a href="meetings.html"><b>How to meet with me</b></a> #}
+                                <a href="https://calendly.com/etosch/30min"><b>Book a 30min meeting</b></a>
                             </div>
                             <div class="is-size-5">{{ config.extra.role }}</div>
                             {% for organization in config.extra.organizations %}
@@ -27,9 +29,9 @@
                                 </a>
                                 {% endfor %}
                             </div>
-                            <div>
+                            {# <div>
                                 <a href="blm.html">BLM Statement</a>
-                            </div>
+                            </div> #}
                         </div>
                     </div>
                     <div class="column is-two-thirds-desktop">
@@ -75,6 +77,60 @@
         </div>
     </div>
 </section>
+
+{# {% set news = get_section(path="news/_index.md") %} #}
+{% set news = config.extra.news %}
+<section id="news" class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title">
+                    <a class="has-text-{{ colors::style() }}" href="#news">Recent News</a>
+                </h1>
+            </div>
+            <div class="column is-two-thirds-desktop">
+                <table>
+                    {% for item in news %}
+                    <tr>
+                        <td>{{ item.month }}&nbsp;{{ item.year }}</td> <td>&nbsp;&middot;&nbsp;</td><td>{{ item.event | safe }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if config.extra.show_projects %}
+{% set projects = get_section(path="projects/_index.md") %}
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-one-third-desktop">
+                <h1 class="title" id="projects">
+                    <a class="has-text-{{ colors::style() }}" href="{{ get_url(path='projects') | safe }}">
+                       {{ projects.title }}
+                    </a>
+                </h1>
+                {% if projects.description %}
+                    <h4 class="title is-4">{{ projects.description }}</h4>
+                {% endif %}
+            </div>
+            <ul class="column is-two-thirds-desktop">
+                <div class="columns is-multiline is-desktop">
+                    {% for project_path in projects.pages %}
+                        <li class="content column is-one-half">
+                            {% set project = get_page(path=project_path.relative_path) %}
+                            {{ macros::project_header(project=project) }}
+                        </li>
+                    {% endfor %}
+                </div>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endif %}
+
 
 {% if config.extra.show_publications %}
 {% set publications = get_section(path="publications/_index.md") %}
@@ -159,35 +215,6 @@
 </section>
 {% endif %}
 
-{% if config.extra.show_projects %}
-{% set projects = get_section(path="projects/_index.md") %}
-<section class="section">
-    <div class="container">
-        <div class="columns is-desktop">
-            <div class="column is-one-third-desktop">
-                <h1 class="title" id="projects">
-                    <a class="has-text-{{ colors::style() }}" href="{{ get_url(path='projects') | safe }}">
-                       {{ projects.title }}
-                    </a>
-                </h1>
-                {% if projects.description %}
-                    <h4 class="title is-4">{{ projects.description }}</h4>
-                {% endif %}
-            </div>
-            <ul class="column is-two-thirds-desktop">
-                <div class="columns is-multiline is-desktop">
-                    {% for project_path in projects.pages %}
-                        <li class="content column is-one-half">
-                            {% set project = get_page(path=project_path.relative_path) %}
-                            {{ macros::project_header(project=project) }}
-                        </li>
-                    {% endfor %}
-                </div>
-            </ul>
-        </div>
-    </div>
-</section>
-{% endif %}
 
 <section id="calendar" class="section">
     <div class="container">
