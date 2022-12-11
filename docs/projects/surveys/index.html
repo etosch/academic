@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+        <style>
+            body {
+                background-color: white
+            }
+        </style>
+        
+        <title>Surveys - An Academic Exercise</title>
+    </head>
+    <body class="layout-documentation page-components">
+        <nav class="navbar is-light navbar-shadow" role="navigation" aria-label="main navigation">
+            
+            <div class="container">
+                
+                <div class="navbar-brand">
+                    <a class="navbar-item is-size-4" href="/">
+                        <strong>An Academic Exercise</strong>
+                    </a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        
+                        <a class="navbar-item is-size-6" href="/#news">
+                            <strong>News</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/projects">
+                            <strong>Projects</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/publications">
+                            <strong>Publications</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/#courses">
+                            <strong>Courses</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/#calendar">
+                            <strong>Calendar</strong>
+                        </a>
+                        
+                    </div>
+                    <div class="navbar-end">
+                        
+                        <a class="navbar-item is-size-6" href="/musings">
+                            <strong>Musings</strong>
+                        </a>
+                        
+                        <a class="navbar-item is-size-6" href="/research_blog">
+                            <strong>Research Blog</strong>
+                        </a>
+                        
+                    </div>
+                </div>
+            
+            </div>
+            
+        </nav>
+        
+
+    
+        
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column is-6-desktop is-offset-3-desktop is-12-tablet">
+                <div class="content">
+                    
+                    
+                    
+                    
+                    <p><strong>Background:</strong> Early in my PhD, I designed a table-based programming language and runtime system to design, debug, and deploy scientific surveys on the web. With my project adivsor, I collaborated with folks from the Linguistics department. I first presented <a href="https://surveyman.emmatosch.com">SurveyMan</a> at the 2014 Off the Beaten Track workshop. This work won first place at the 2014 PLDI Student Research Competition, a best paper award at OOPSLA 2014, and a 2015 Outstanding Synthesis Award at the University of Massachusetts Amherst. UVM PhD student <a href="https://www.uvm.edu/%7Emvmcconn/">Michael McConnell</a> resurrected this work with an interest in applying quantitative information flow to surveys to protect potentially vulnerable populations. </p>
+<p><strong>Current work:</strong> As a result of serendipitous opportunitites afforded by my UVM colleagues <a href="https://uvm.edu/%7Ejnear">Joe Near</a>, I returned to this work due to the confluence of student interest in privacy, natural language processing, and biased data collection. Furthermore, the release of tools that leverage large langauge models have made some of the more labor-intenstive aspects of this work potentially much lighter. If you would like to discuss further, please <a href="mailto:e.tosch@northeastern.edu">reach out</a> and/or <a href="/https://calendly.com/etosch/30min">schedule</a>a meeting with me.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+        
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>Powered by <strong><a class="has-text-info" href="https://github.com/tforgione/zola-academic">the academic theme</a></strong> for <strong><a class="has-text-info" href="https://www.getzola.org">Zola</a></strong> using <strong><a class="has-text-info" href="https://bulma.io">Bulma</a></strong>.
+            </div>
+        </footer>
+        
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+              if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                  el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                  });
+                });
+              }
+            });
+        </script>
+    </body>
+</html>
