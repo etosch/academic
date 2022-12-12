@@ -17,4 +17,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BUILD_DIR: src
+    - name: Copy to docs folder
       run: rsync -r ${{ github.workspace }}/src/public/* ${{ github.workspace }}/docs/
