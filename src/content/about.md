@@ -57,6 +57,6 @@ transparent = false
 [extra]
 +++
 
-Emma Tosch is currently a Researcher at Northeastern University working with [Dr. Chris Martens](https://sites.google.com/ncsu.edu/cmartens) on generating narratives to explain privacy policies. She was [formerly](/resignation) an Assistant Professor of [Computer Science](https://www.uvm.edu/cems/cs) in the [College of Engineering and Mathematical Sciences](https://www.uvm.edu/cems) at the [University of Vermont](https://www.uvm.edu). 
+Emma Tosch is currently a Researcher at Northeastern University working with [Dr. Chris Martens](https://sites.google.com/ncsu.edu/cmartens) on generating narratives to explain privacy policies. She was formerly an Assistant Professor of [Computer Science](https://www.uvm.edu/cems/cs) in the [College of Engineering and Mathematical Sciences](https://www.uvm.edu/cems) at the [University of Vermont](https://www.uvm.edu). 
 
 Tosch works in *applied programming languages (PL) research*, where she treats the process of language formalization &mdash; especially the design of domain-specific languages &mdash; as a methodological approach to problems not ordinarily considered the domain of PL. She is particularly interested in building languages and tools for data scientists and social scientsts and has recently been applying her work in the cybersecurity domain. [Longer bio &#187;](/biography)
