@@ -135,13 +135,13 @@ ignored_content = [".*drafts.*"]
 [[extra.courses]]
 name = "Artificial Intelligence"         
 iterations = [
-  {institution="UVM", term="Spring 2022", link="https://uvm-maple.github.io/CS295A-S22/", evals="CS295A_S22.pdf"}
+  {institution="UVM", term="Spring 2022", link="https://etosch.github.io/CS295A-S22/", evals="CS295A_S22.pdf"}
 ]
 
 [[extra.courses]]
 name = "Systems for Knowledge Discovery"
 iterations=[
-  {institution="UVM", term="Fall 2021", link="https://uvm.edu/~etosch/CS295B-F21", evals="CS295B_F21.pdf" }
+  {institution="UVM", term="Fall 2021", link="https://etosch.github.io/CS295B-F21/", evals="CS295B_F21.pdf" }
 ]
 
 [[extra.courses]]
