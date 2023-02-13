@@ -1,3 +1,4 @@
 zola-academic-example/content/musings/drafts/*
 drafts
 src/public
+.DS_Store
