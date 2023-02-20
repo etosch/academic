@@ -1,6 +1,5 @@
 # The theme of the site
-theme = "zola-academic"
-
+theme = "zola-academic-example/themes/zola-academic"
 
 # The title of the site
 title = "An Academic Exercise"

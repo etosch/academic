@@ -1,0 +1,3 @@
+[submodule "src/src/themes/zola-academic-example"]
+	path = src/src/themes/zola-academic-example
+	url = https://github.com/tforgione/zola-academic-example
