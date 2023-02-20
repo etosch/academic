@@ -1,0 +1,3 @@
+[submodule "zola-academic"]
+	path = src/themes/zola-academic
+	url = git@github.com:zola-academic/zola-academic.git
