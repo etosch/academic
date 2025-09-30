@@ -10,11 +10,13 @@
         <meta name="author" content="Emma Tosch (etosch@gmail.com)">
       
       
-        <link rel="canonical" href="https://emmatosch.com/2020/11/17/research-philosophy.html">
+        <link rel="canonical" href="https://emmatosch.com/2022/07/20/answering-the-important-questions.html">
       
       
+        <link rel="prev" href="../09/writing-every-day.html">
       
-        <link rel="next" href="../../12/10/forms-of-address.html">
+      
+        <link rel="next" href="../../08/18/non-cooperation-in-experiments.html">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
@@ -25,7 +27,7 @@
     
     
       
-        <title>Research philosophy - Emma Tosch, Thought Follower</title>
+        <title>Answering the important questions - Emma Tosch, Thought Follower</title>
       
     
     
@@ -69,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#abstractions" class="md-skip">
+        <a href="#what-is-pl" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Research philosophy
+              Answering the important questions
             
           </span>
         </div>
@@ -848,59 +850,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#abstractions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Abstractions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#language-design-and-system-building" class="md-nav__link">
-    <span class="md-ellipsis">
-      Language Design and System Building
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#correctness" class="md-nav__link">
-    <span class="md-ellipsis">
-      Correctness
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#people-centric-evaluation" class="md-nav__link">
-    <span class="md-ellipsis">
-      People-Centric Evaluation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applications
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -937,20 +888,10 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2020-11-17 00:00:00+00:00" class="md-ellipsis">November 17, 2020</time>
+                        <time datetime="2022-07-20 00:00:00+00:00" class="md-ellipsis">July 20, 2022</time>
                       </div>
                     </li>
                     
-                    
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
-                          <span class="md-ellipsis">
-                            in
-                            
-                              <a href="../../../category/research.html">Research</a></span>
-                        </div>
-                      </li>
                     
                     
                       
@@ -959,7 +900,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              5 min read
+                              4 min read
                             
                           </span>
                         </div>
@@ -986,54 +927,46 @@
   
 
 
-  <h1>Research philosophy</h1>
+<div><p>Here in the MaPLE lab, we treat the techniques students cultivate in their <em>programming systems</em> classes as general methods for answering a broad range of research questions that arise in and around software when it is used in nontraditional ways.  As a result, students without formal training in the techniques we use often ask: "What is PL?," whereas those with training often ask: "How is what you do PL?" </p>
+<!-- This blog post seeks to clarify these questions.  -->
 
-<div><p>Everyone should have an elevator pitch about their research. When we start out, that pitch is very focused on a particular project, problem, or technique. As time passes, we form a more expansive <em>research vision</em> that can encompass new domains, related problems, and complementary techniques, but still ties everything together in a coherent philosophy, with a long-term goal. My pitch is: <em>programming languages (PL) and software engineering (SE) form the methodological foundation for next-generation advancements in data-driven scientific inquiry</em>. Just as scientific instruments made new experiments and discoveries possible, so too will new programming languages, systems, frameworks, and platforms.</p>
 <!-- more -->
 
-<p>Therefore, my perspective is to work on the fundamental tooling that allows us to answer a variety of research questions. I'm guided by the following questions:<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h1 id="what-is-pl">What is PL?</h1>
+<p><img alt="You must not know about me" class="inlineright" src='https://i.imgflip.com/6nd2qf.jpg"'></p>
+<p>Everyone in PL eventually has the experience of telling someone their research area is programming languages and having that person respond with "Oh? What programming language do you study?" This is understandable; many students' first exposure to PL is still via a programming paradigms course, which have <a href="https://blog.sigplan.org/2021/01/28/re-imagining-the-programming-paradigms-course/">highly variable content</a>.
+ However, the main gist is that there are a variety of ways we can design what a language looks like (i.e., its primitive components and the rules for combining them, or its <em>syntax</em>) and these design choices are supposed to make some things easier than others. Some of the features we believe to be impacted by design are obvious, like <a href="https://blog.sigplan.org/2021/07/06/programming-languages-human-computer-interaction-continuing-the-story-at-splash-2020/">usability</a> (e.g., the <a href="https://wiki.c2.com/?WhyWeHateLisp">heated debate</a> about <a href="https://andreyorst.gitlab.io/posts/2020-12-03-we-need-to-talk-about-parentheses/">parentheses of Lisp</a> vs. <a href="https://groups.google.com/g/comp.lang.lisp/c/g2K3bDeWTdg">spaces of Python</a>) and some are less obvious, like <a href="https://willcrichton.net/notes/systems-programming/">performance</a> and <a href="https://danluu.com/empirical-pl/">correctness</a>. Most of these benefits are not just about the language's syntax, but also include reasoning about its <em>semantics</em>, or how we should interpret what the program <em>means</em> or <em>does</em>. </p>
+<p>However, quite a bit of PL research these days it not about general-purpose programming languages at all!  I'll get more into this in the <a href="#how-is-what-you-do-pl">section below</a>, but for now it can be helpful to just think about PL more abstractly. One of the best high-level views of PL I've seen is Eelco Visser's <a href="https://www.youtube.com/watch?v=vyF5d-EFIwU&amp;t">PLMW 2019 talk</a>, wherein he described <strong>PL as being about "getting stuff for free."</strong> One mechanism for "getting stuff for free" is designing domain-specific languages (i.e., DSLs, languages designed for a limited and highly specialized domain, not necessarily for human end-users) such that we can say meaningful things about them <em>without actually running them</em>, using existing tools and techniques.  </p>
+<p>When we analyze programs without actually running them, this is called <em>static analysis</em>. Intuitively, if you can ask <em>important questions</em> about the range of a program's behaviors <em>before</em> running it, you have higher confidence that fewer bad things will happen. Terms like "important questions" and "bad things" are purposefully vague because they depend on the particular domain you are working in. The more we can cleverly encode information in a language's syntax, the easier it becomes to analyze programs statically. One popular goal in PL research is to find ways to catch problems early.  </p>
+<p>{{ image(src="img1.png", 
+         alt="Image showing a rough timeline of PL-related tasks in the following order: language design, interpreter implementation, writing a program in the language, running static analyzer, running the program, and finally observing output or error.", 
+         caption="A sketch of the ordering of some PL-related tasks you might do.",
+         class="full") }}</p>
+<p>One common point of confusion for newcomers who have a background in computer science but not PL: we know that answering arbitrary questions about the execution of an arbitrary program is undecidable. In PL, we are typically interested in <em>specific</em> questions about arbitrary programs written in a <em>specific</em> language.</p>
+<h1 id="how-is-what-you-do-pl">How is what you do PL?</h1>
+<p>PL as a field has become <a href="http://www.pl-enthusiast.net/2015/05/27/what-is-pl-research-and-how-is-it-useful/">increasingly interdisciplinary</a>, as researchers <a href="http://www.pl-enthusiast.net/2019/02/04/what-is-pl-research-the-talk/">apply PL concepts</a> to problems not ordinarily thought of as <a href="https://blog.sigplan.org/2020/07/29/increasing-the-impact-of-pl-research/">within scope</a>. Much of the work we do in MaPLE is deeply interdisciplinary, reflecting this reality. 
+One perspective on the evolution of PL that I like is the treatment of languages as part of a programmer's broader toolkit, exemplified in this <a href="https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext">2018 CACM article</a>. They mention two affordances of this perspective on PL that I like:</p>
 <ul>
-<li><a href="#abstractions">What are the core abstractions of a problem or domain and how do they combine?</a> (<u title="Programming Languages">PL</u>)</li>
-<li><a href="#language-design-and-system-building">How do we encode these abstractions in programs or software systems?</a> (<u title="Programming Languages">PL</u>/Systems)</li>
-<li><a href="#correctness">Once encoded, how do we know the system is correct? What properties should it have?</a> (<u title="Programming Languages">PL</u>/<u title="Software Engineering">SE</u>/Security/Privacy/Fairness/Statistics)</li>
-<li><a href="#people-centric-evaluation">Once encoded, how do we get people to use our system (and use it correctly!)?</a> (<u title="Software Engineering">SE</u>/<u title="Human-Computer Interaction">HCI</u>/Security)</li>
-<li><a href="#applications">Once we have a system, what questions can we answer now that we couldn't answer before?</a> (<u title="Data Science">DS</u>, <u title="Machine Learning">ML</u>, <u title="Computational Social Science">CSS</u>, etc.) </li>
+<li>Enable creators of a language to enforce its invariants, and</li>
+<li>Turn extra-linguistic mechanisms into linguistic constructs. </li>
 </ul>
-<h2 id="abstractions">Abstractions</h2>
-<p>Throughout my research career, I have been interested in developing <a href="https://en.wikipedia.org/wiki/Domain-specific_language"><em>domain-specific languages</em></a> (DSLs) for tasks when appropriate. Some common DSLs that people may know are <u title="Structured Query Language, a specification for querying databases">SQL</u>, <u title="Cascading Stylesheets, a specification for website layout">CSS</u>, and even <a href="https://www.youtube.com/watch?v=TMIBfzSqguQ">spreadsheets</a> like Excel! What differentiates DSLs from so-called "general-purpose programming languages" is that their design is <em>tailored to a specific task</em>: they may certain things much easier to do than others. We refer to the set of things that are easy to do as the base set of <em>abstractions</em>, and the language restricts or enables how those abstractions may combine. </p>
-<p>A critical feature of language design is recognizing whether it is germane to the problem in the first place! Not all problems or domains necessitate a new language. Instead, in my research, I work to understand the problem or domain first, and then identify and encode (typically in consultation with a domain expert) language abstractions and rules for combining those abstractions. Sometimes this process of formalization can reveal interesting properties about the domain not previously considered. Sometimes these properties are a byproduct of moving a perviously manual or offline task to an encoded, automated one. </p>
-<p><img alt="Identifying Abstractions: SurveyMan columns" src="../../../static/img/surveyman.png" width="70%"></p>
-<p>For an example of this approach, see my <a href="https://surveyman.emmatosch.com">SurveyMan</a> work.</p>
-<p><em>While the SurveyMan project has been on hold for several years, I am looking to work with students on some related work/research questions in both programming languages (specifically related to blocks languages) and computational social science (specifically related to crowdsourcing). I am particularly interested in students who would like to address security questions (related to adversarial behavior during data collection) and privacy questions (related to protecting participants' information). Please reach out if you are interested!</em></p>
-<h2 id="language-design-and-system-building">Language Design and System Building</h2>
-<p>Once we have identified the core set of abstractions and how they combine, my work usually involves implementing them in an actual system! This step of the research often involves some iteration with the <a href="#abstractions">abstraction design process</a>, and is coding-heavy. One of the concrete benefits to students who work with me is that they have the opportunity to hone their programming skills while also doing research.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> For larger systems, the software architecture can become a research contribution, especially if that software architecture generalizes to related problems. </p>
-<p><img alt="Generalizing Software Architecture for Explanation" src="../../../static/img/explsystem.png" width="70%"></p>
-<p>This is an example of ongoing work on the software architecture for explanation systems for autonomous agents.</p>
-<p><em>This is ongoing on work that includes opportunities for students interested in probabilistic programming languages. Please reach out if you are interested!</em></p>
-<h2 id="correctness">Correctness</h2>
-<p>The advantage of encoding abstractions is that they facilitate proving properties about programs. We can use the base abstractions and the rules for how they combine to show inductively that properties of interest hold. Traditionally this has meant devising a <em>type system</em>, which categorizes pieces of programs into sets, and showing that the system is <em>sound</em>, according to some predefined notion of "soundness." Students familiar with types in programming languages may recognize <em>type safety</em> as a kind of soundness, where the procedure that categorizes these pieces of programs never "gets stuck" and always arrives at the same answer. </p>
-<p>There are many properties that can be proven about programs, other than type safety. For example, <em>static taint analysis</em> uses information flow to prove that private data does not leak, while <em>type state</em> provides the abstractions necessary to reason about interactions between a program and the persistent mutable state of the executing machine (e.g., a file is properly closed). Both of these examples are about properties not normally associated with type inference, but address the correctness of programs nonetheless.</p>
-<p>The <a href="https://plaid.w3.uvm.edu/">PLAID Lab</a> has expertise in proving properties of programs, in the domains of type safety, security, privacy, and fairness. My future collaborations will reflect the expertise present here at UVM.</p>
-<h2 id="people-centric-evaluation">People-Centric Evaluation</h2>
-<p>During the design phase, I work with domain experts to understand what tools potential users prefer. While this process of including users in the design loop has been informal, I look forward to working with collaborators and students who are interested in taking a more human-factors approach to the evaluation of new systems. I am particularly interested in better understanding the usability of the language, tools, and systems I design.</p>
-<p><img alt="Output of the PlanAlyzer System" src="../../../static/img/output.png">
-For example, the output of my <a href="https://arxiv.org/pdf/1909.13649.pdf">PlanAlyzer</a> <a href="https://github.com/KDL-umass/PlanAlyzer">static analysis tool</a> is either the above "pretty-printed" text, or <u title="comma-separated values, a file format suitable for uploading to a spreadsheet or database">csvs</u> that can be loaded into a database. The above notation uses the conventions of experimentalists, but this output does not scale, and may not be understood by non-experts.</p>
-<p><em>I am particularly interested in collaborating with folks who study, or are interested in studying, how to better present large volumes of information to users, especially when users must make decisions in the presence of these data.</em></p>
-<h2 id="applications">Applications</h2>
-<p>Finally, since I am interested in designing better <em>platforms</em> for facilitating basic research, I enjoy working with folks who have interest or expertise in specific application areas. In a way, my collaborators could be seen as "clients" of my software, except that there is the goal of discovering novel problems at the intersection of software and their domains, rather than simply delivering solutions. This means that my collaborations are cooperative.</p>
-<!-- [^1]: While I am sure many others have made this observeration, I need to thank [Abe Handler](https://www.abehandler.com/) and [John Foley](https://jjfoley.me/) specifically, for pointing out to me that we have TensorFlow and related prior projects to thank for the exponential increase in deep learning research! -->
-
-<div class="footnote">
-<hr>
-<ol>
-<li id="fn:1">
-<p>This very question-first approach to research is deeply influenced by one of my PhD supervisors, <a href="https://cs.umass.edu/~jensen">Dr. David Jensen</a>, who has always been an exemplar of how to view computing as <em>science</em>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
-<li id="fn:2">
-<p>Often students expect research to involve more programming; while it can, students may go for long periods of time without practicing. This can become a problem if, years into a PhD program, you realize you need to write software to do your research, but lack the experience or skills to do it yourself. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
-</li>
-</ol>
-</div></div>
+<p>We enforce invariants through language design choices, such as prohibiting certain operations (e.g., recursion), making certain constructs atomic (e.g., parallel operators), and equipping programs with complementary systems that encode "extra" information beyond what's necessary to execute the program (e.g., types). </p>
+<p>"Extra-linguistic" mechanisms refers to "stuff" that isn't ordinarily part of a language, but you nevertheless need to be able to reason about programs. In this lab, we often work in contexts where the end result is some kind of statistical analysis. Those analyses are often only valid (in theory, if not in practice!) if certain assumptions about data generating process are true. </p>
+<p>Now, statisticians have devised incredibly clever ways to make up for violations to these assumptions. In this lab, we don't strive to devise new corrections; instead, we try to understand existing problems via assumptions and corrections, and then design systems (such as programming languages, libraries, and frameworks) to either prevent the assumptions from being broken or make diagnosis easier. In that way, we use PL principles to push diagnostics earlier, making it so that we fail faster (a good thing because we don't waste resources!). </p>
+<p>{{ image(src="img2.png",
+         caption="",
+         alt="",
+         class="full")}}</p>
+<p>{{ image(src="https://i.imgflip.com/6necwk.jpg",
+         alt="To the left to the left. Everything that can, gets moved to the left",
+         class="full",
+         caption="") }}</p>
+<p>Because much of what we do involves deep dives into different data-driven domains, the PL principles that drive our approach aren't always immediately apparent. In the general case this is a good thing — we don't want to burden domain experts with a novel field when their goal is to just get something done! However, we do uncover interesting properties of programs in these domains that have implications for PL methods. This creates an exciting feedback loop between PL and the domains we work in. </p>
+<p><span class="tweet">
+First lab blog post! Read it to find out what MaPLE is about. :)</span></p>
+<!-- Need to keep a database that matches blog posts to tweet hashes. Use this to select out the tweet to reply to. -->
+<!-- Also want to have a check that the tweet is 180chars-length of blog post url (which probably means we want something that compresses the url to a fixed length) -->
+<p></p></div>
 
 
 
