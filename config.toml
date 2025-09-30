@@ -1,0 +1,156 @@
+# The theme of the site
+theme = "zola-academic"
+
+# The title of the site
+title = "Posts from a Thought Follower"
+
+# The URL the site will be built for
+base_url = "/"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+#highlight_code = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[extra]
+# Put all your custom variables here
+
+# Author of the page
+author = "Emma Tosch"
+
+# Role of the author
+role = "Researcher"
+
+# Organizations of the author
+organizations = [ 
+#  { name = "University of Vermont Computer Science", link = "https://uvm.edu/cems/cs" }, 
+#  { name = "Center for Computer Security and Privacy", link = "https://compsec.w3.uvm.edu" },
+#  { name = "MaPLE Lab", link = "https://uvm.edu/~maple" }
+{ name = "Northeastern University (CAMD)", link = "https://camd.northeastern.edu" },
+{ name = "POEM Lab", link  = "https://sites.google.com/ncsu.edu/poem" }
+]
+
+# Whether the navbar should be screen wide or page wide
+wide_navbar = false
+
+# Url of your profile pic
+# You should put your portrait in the static directory.
+portrait = "img/portrait.jpg"
+
+# The links you want to put on the left of the navbar
+menu_right = [
+  { name = "Musings", link = "musings" },
+  { name = "Research Blog", link = "research_blog" } 
+]
+
+menu_left = [
+    { name = "News", link = "/#news"},
+    { name = "Projects", link = "/projects" },
+    { name = "Publications", link = "/publications" },
+    { name = "Courses", link = "/#courses" },
+    { name = "Calendar", link = "/#calendar" }
+]
+
+# Social icons that will appear under your profile box
+social_icons = [
+{icon="fa-envelope", icon_pack="fa", link="mailto:e.tosch@northeastern.edu"},
+{icon="ai-google-scholar", icon_pack="ai", link="https://scholar.google.com/citations?user=v5dHW4wAAAAJ&hl=en"},
+{icon="fa-github", icon_pack="fab", link="https://github.com/etosch" },
+# {icon = "fa-twitter", icon_pack = "fab", link = "https://twitter.com/ToschEmma"},
+{icon="fa-linkedin", icon_pack="fab", link = "https://www.linkedin.com/in/etosch/"},
+{icon="ai-cv", icon_pack="ai", link="cv.pdf"},
+]
+
+# Your interests
+interests = [
+    { label = "Domain-Specific Languages" },
+    { label = "Methodology" }, 
+    { label = "Reproducibility" }
+]
+
+# Your diplomas
+education = [
+{course = "PhD in Computer Science", institution = "University of Massachusetts Amherst", year = 2020},
+{course = "Post-bac/MA in Computer Science", institution = "Brandeis University", year = 2011},
+{course = "BA in English Literature", institution = "Wellesley College", year = 2008}
+]
+
+# The ways people can contact you
+contact_links = [
+#  {icon="fa-envelope", icon_pack="fa", name = "Email me", link="mailto:etosch@uvm.edu"},
+  # {icon = "fa-twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/ToschEmma"},
+]
+
+fun_facts = [
+  { text = "I used to dabble in creative writing and have an IMDB page.", link = "https://www.imdb.com/name/nm4507616/" },
+  { text = "I also used to be really into literary criticism.", link = "https://www.bu.edu/backbay/archive/1.pdf"},
+  { text = "I was homeschooled (specifically, unschooled) for five years."},
+  { text = "I consider my greatest accomplishments to be: (1) learning to play Maurice Ravel's Jeux D'eau and (2) teaching myself to play some of Bach's Inventions on guitar. At present, I can do none of these things."},
+  { text = "I've held a variety of jobs, including clerk at a Wawa, clerk at an ACMoore, a farmhand, bank teller (very briefly!), and assistant to a mortgage broker, and many others." },
+  { text = "My family is upwardly mobile and directly benefitted from LBJ's War on Poverty. Many in my family are civil servants, especially K-12 teachers."},
+  { text = "I delayed the start of my academic appointment to do civil service (mostly: volunteer with Arizona Voter Protection) and local election support."},
+  { text = "Today my hobbies include rock climbing, cycling, and watching T.V. I'm only really good at watching T.V."}
+]
+
+news = [
+  { year = "2023", month="Jan", event = "I spoke about ASP-powered narrative generation for explaining privacy policies on behalf of <a href=\"https://dblp.org/pid/198/8223.html\">Chinmaya Dabral</a> and <a href=\"https://sites.google.com/ncsu.edu/cmartens\">Dr. Chris Martens</a> at <a href=\"https://popl23.sigplan.org/details/prolala-2023-papers/8/Exploring-Consequences-of-Privacy-Policies-with-Narrative-Generation-via-Answer-Set-P\">ProLaLa 2023.</a>"},
+  { year = "2022", month="Dec", event = "I spoke on the panel <a href=\"https://www.openconf.org/acsac2022/modules/request.php?module=oc_program&action=page.php&id=32\"><i>On the Curation of Artifacts in the Era of AI/ML for Cybersecurity</i></a> at the <a href=\"https://www.acsac.org\">Annual Computer Security Applications Conference (ACSAC)</a>, organized by <a href=\"https://www.rit.edu/directory/sjyeec-shanchieh-yang\">S. Jay Yang</a>." },
+  { year = "2022", month="Dec", event = "I gave the <a href=\"https://www.openconf.org/acsac2022/modules/request.php?module=oc_program&action=page.php&id=15#Reproducibility\">keynote talk</a> at the <a href=\"https://laser-workshop.org/index.html\">Learning from Authoritative Security Experiment Results</a> at the <a href=\"https://www.acsac.org\">Annual Computer Security Applications Conference (ACSAC)</a>, organized by <a href=\"http://www.csl.sri.com/people/balenson/\">David Balenson</a>." },
+  { year = "2022", month="Nov", event = "I gave a <a href=\"https://ceps.unh.edu/computer-science/opportunities/robotics-seminar-series\">talk at UNH</a> on formal language support for experimentation as part of the <a href=\"https://ceps.unh.edu/computer-science/opportunities/robotics-seminar-series\">Robotics Seminar Series</a> (host: <a href=\"https://www.cs.unh.edu/~dietz/\">Laura Dietz)</a>."},
+  { year = "2022", month="Nov", event = "I had another fun and inspiring visit with friends at GMU, where I gave a talk during the SE lunchtime seminar series on formal language support for experimentation (host: <a href=\"https://cs.gmu.edu/~tlatoza/\">Thomas LaToza</a>)."},
+  { year = "2022", month="Nov", event = "<a href=\"http://arxiv.org/abs/2212.06719\"><i>Exploring Consequences of Privacy Policies with Narrative Generation via Answer Set Programming</i></a> was accepted to <a href=\"https://popl23.sigplan.org/home/prolala-2023\">ProLaLa23</a>; first author <a href=\"https://dblp.org/pid/198/8223.html\">Chinmaya Dabral</a> will be presenting in January (co-located with <a href=\"https://popl23.sigplan.org/\">POPL23</a>)."},
+  { year = "2022", month="Oct", event = "I officially started in a new research position working for <a href=\"https://sites.google.com/ncsu.edu/cmartens\">Dr. Chris Martens</a> at <a href=\"https://camd.northeastern.edu/\">Northeastern University</a> on narrative generation for privacy policies and am looking forward to further collaborations with them in the longer term!"},
+  { year = "2022", month="Sep", event = "I began <a href=\"https://cra.org/csgrad4us/\">serving as a coach/mentor</a> for three awesome mentees via the <a href=\"https://www.nsf.gov/cise/CSGrad4US/\">NSF's CSGrad4US program</a>."},
+  { year = "2022", month="Aug", event = "I resigned from my tenure-track position at UVM."},
+  { year = "2022", month="Aug", event = "Longtime collaborator <a href=\"https://cs.umass.edu/~kclary\">Kaleigh Clary</a> presented <a href=\"https://www.usenix.org/system/files/sec22-clary.pdf\">our (but really it's all hers!) work</a> at <a href=\"https://www.usenix.org/\">USENIX Security 2022</a>. Extra shoutout for her putting up with my Bela Karoliy-esque conference-talk-crafting-style. Also folks, she is a job-seeker!"},
+  { year = "2022", month="Jun", event = "My <a href=\"https://beta.nsf.gov/funding/opportunities/formal-methods-field-fmitf\">Formal Methods in the Field</a> grant proposal was <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2220422&HistoricalAwards=false\">accepted for funding by the NSF</a>!! (<a href=\"https://www.youtube.com/watch?v=Xzh58RHJVwg\">First try!!</a>)"}
+]
+
+pronouns = "she/her"
+
+# Disable the footer
+disable_footer = false
+
+# Widgets to show on main page
+show_publications = true
+show_posts        = false
+show_projects     = true
+show_courses      = true
+show_contact      = false
+
+# Choose your colorscheme among those
+colorscheme = "default"
+# colorscheme = "ocean"
+# colorscheme = "forest"
+
+ignored_content = [".*drafts.*"]
+
+
+[[extra.courses]]
+name = "Artificial Intelligence"         
+iterations = [
+  {institution="UVM", term="Spring 2022", link="https://etosch.github.io/CS295A-S22/", evals="CS295A_S22.pdf"}
+]
+
+[[extra.courses]]
+name = "Systems for Knowledge Discovery"
+iterations=[
+  {institution="UVM", term="Fall 2021", link="https://etosch.github.io/CS295B-F21/", evals="CS295B_F21.pdf" }
+]
+
+[[extra.courses]]
+name = "Reinforcement Learning"
+iterations=[
+  {institution="UVM", term="Spring 2021", link="Syllabus_CS253.pdf", evals="CS253A_S21.pdf"}
+]
+
+[[extra.courses]]
+name = "Reasoning Under Uncertainty"
+iterations=[
+  {institution = "UMass Amherst", term = "Spring 2018", evals="CS240_S18.pdf"}
+]

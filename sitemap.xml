@@ -1,98 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>/</loc>
+         <loc>https://emmatosch.com/index.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/about/</loc>
+         <loc>https://emmatosch.com/about.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/biography/</loc>
+         <loc>https://emmatosch.com/news.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/meetings/</loc>
+         <loc>https://emmatosch.com/2025/08/20/new-student-new-project.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/musings/</loc>
+         <loc>https://emmatosch.com/2025/09/16/jupyter-dsls.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/musings/advising/</loc>
-        <lastmod>2020-12-15T00:00:00Z</lastmod>
+         <loc>https://emmatosch.com/2025/09/17/dsl-usability-research.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/musings/service/</loc>
-        <lastmod>2020-12-14T00:00:00Z</lastmod>
+         <loc>https://emmatosch.com/2020/12/15/advising-expectations-basics.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/musings/writing/</loc>
-        <lastmod>2022-07-09T00:00:00Z</lastmod>
+         <loc>https://emmatosch.com/2023/02/09/reproduction-vs-replication.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/news/</loc>
+         <loc>https://emmatosch.com/2020/11/17/research-philosophy.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/news/acsac-keynote/</loc>
+         <loc>https://emmatosch.com/2022/12/11/leaving-uvm.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/news/acsac-panel/</loc>
+         <loc>https://emmatosch.com/2020/12/14/regarding-graduate-student-service.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/news/gmu/</loc>
+         <loc>https://emmatosch.com/2021/08/06/speaking-is-hard.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/news/unh/</loc>
+         <loc>https://emmatosch.com/2020/12/10/forms-of-address.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/projects/</loc>
+         <loc>https://emmatosch.com/2021/01/02/transitioning-my-twitter-account.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/projects/experiments/</loc>
-        <lastmod>2022-01-01</lastmod>
+         <loc>https://emmatosch.com/2022/08/18/non-cooperation-in-experiments.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/projects/explanation/</loc>
-        <lastmod>2022-12-11</lastmod>
+         <loc>https://emmatosch.com/2022/07/09/writing-every-day.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/projects/pl-law/</loc>
-        <lastmod>2022-01-01</lastmod>
+         <loc>https://emmatosch.com/projects/index.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/projects/surveys/</loc>
-        <lastmod>2019-01-01</lastmod>
+         <loc>https://emmatosch.com/projects/experiments.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/pronouns/</loc>
-        <lastmod>2022-12-11T00:00:00Z</lastmod>
+         <loc>https://emmatosch.com/projects/explanation.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/publications/</loc>
+         <loc>https://emmatosch.com/projects/pl_law.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/publications/adversaries/</loc>
-        <lastmod>2022-08-01</lastmod>
+         <loc>https://emmatosch.com/projects/surveys.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/publications/planalyzer/</loc>
-        <lastmod>2019-10-01</lastmod>
+         <loc>https://emmatosch.com/archive/2025.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/publications/surveyman/</loc>
-        <lastmod>2014-10-01</lastmod>
+         <loc>https://emmatosch.com/archive/2023.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/publications/toybox/</loc>
-        <lastmod>2020-01-01</lastmod>
+         <loc>https://emmatosch.com/archive/2022.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/research_blog/</loc>
+         <loc>https://emmatosch.com/archive/2021.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/research_blog/reproducibility/</loc>
-        <lastmod>2023-02-09T00:00:00Z</lastmod>
+         <loc>https://emmatosch.com/archive/2020.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
     <url>
-        <loc>/resignation/</loc>
-        <lastmod>2022-12-11T00:00:00Z</lastmod>
+         <loc>https://emmatosch.com/category/dsls.html</loc>
+         <lastmod>2025-09-30</lastmod>
+    </url>
+    <url>
+         <loc>https://emmatosch.com/category/helical.html</loc>
+         <lastmod>2025-09-30</lastmod>
+    </url>
+    <url>
+         <loc>https://emmatosch.com/category/jupyter.html</loc>
+         <lastmod>2025-09-30</lastmod>
+    </url>
+    <url>
+         <loc>https://emmatosch.com/category/research.html</loc>
+         <lastmod>2025-09-30</lastmod>
+    </url>
+    <url>
+         <loc>https://emmatosch.com/category/musings.html</loc>
+         <lastmod>2025-09-30</lastmod>
+    </url>
+    <url>
+         <loc>https://emmatosch.com/page/2/index.html</loc>
+         <lastmod>2025-09-30</lastmod>
     </url>
 </urlset>
