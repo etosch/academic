@@ -1,0 +1,7 @@
+.md-content h1 {
+    text-align:right;
+}
+
+.md-nav__title {
+    display: none;
+}
