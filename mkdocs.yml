@@ -1,0 +1,75 @@
+site_name: "Emma Tosch, Thought Follower"
+site_author: "Emma Tosch (etosch@gmail.com)"
+docs_dir: "src"
+use_directory_urls: false
+site_url: "https://emmatosch.com"
+repo_url: "https://github.com/etosch/academic.git"
+repo_name: "Github"
+
+theme: 
+  palette:
+    primary: black
+    accent: amber
+  favicon: 
+  icon:
+    logo: material/thought-bubble
+  name: material
+  features: 
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+#    - navigation.sections
+    - navigation.indexes # (1)!
+  custom_dir: src/overrides
+
+markdown_extensions:
+  - attr_list
+  - extra
+  - sane_lists
+  - tables
+  - nl2br  
+
+
+plugins: 
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date 
+      categories:
+      - categories
+      - tags
+      comments_path: "$__comments"
+  - blog:
+      blog_dir: .
+      authors_profiles: false
+      pagination_per_page: 5
+  - diagrams
+  - search 
+  - tags
+  - mkdocs-video
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - static/css/custom.css
+
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# extra:
+#   social:
+#   - icon: fontawesome/
+#   - link: /

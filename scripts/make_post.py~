@@ -1,0 +1,5 @@
+import datetime
+import yaml
+
+with open('mkdocs.yml', 'r') as stream:
+    meta = yaml.safe_load(stream)
